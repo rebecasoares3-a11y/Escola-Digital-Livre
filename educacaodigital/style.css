@@ -1,0 +1,73 @@
+/* variaveis globais cores e fontes */
+:root { 
+    --color-primary: #37b156;
+    --color-primary-dark: #4339CA;
+    --color-text: #1E1B2E;
+    --color-text-light: #6B7280;
+    --color-bg: #FFF; 
+    --color-border: #E5E7EB;
+    --font-main: 'Inter', sans-serif;
+
+}
+/* Reset básico: remove espaçamentos padrão do navegador */
+    * { 
+      margin: 0; /* espaçamento externo */
+      padding: 0; /* espaçamento interno */
+      box-sizing: border-box; /* padding e border nao aumentam o tamanho do elemento */
+
+      }
+
+      body {
+
+        font-family: var(--font-main);
+
+      }
+      .header {
+        width: 100%;
+        background-color: var(--color-bg);
+        border-bottom: 1px solid var(--color-border);
+
+        position: sticky; 
+        top: 0;
+        z-index: 100;
+      }
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      /* logo */
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+      .logo img {
+        width: 40px;
+        object-fit: contain;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+       
+      }
+
+      .logo-title {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--color-text)
+      }
+
+      .logo-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-text-light);
+      }

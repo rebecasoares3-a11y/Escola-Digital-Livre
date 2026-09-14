@@ -1,40 +1,73 @@
-<!DOCTYPE html>
-<!-- oii
- <!-- > esse documento usa <html5--> 
+<!DOCTYPE html> 
+<!-- Declara que este documento usa HTML5 -->
 
-
-<html lang="pt br">
-    <!--  elemento raiz da pagina. lang "pt br" define o idioma -->
+<html lang="pt-BR">
+<!-- Elemento raiz da página. lang="pt-BR" define o idioma  -->
 
 <head>
-<!-- informaç"oes dos bastidores: nao aparecem diretamente na tela -->
+    <!-- Informações de bastidores: não aparecem diretamente na tela  -->
 
-    <meta charset="UTF-8"> <!-- codificaçao de caracteres, garante acentos corretos -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ativa a responsabilidade em dispositivos moveis -->
+    <meta charset="UTF-8"> <!-- Codificação de caracteres, garante acentos corretos -->
 
-    <title>Escola digital livre</title> <!-- titulo do projeto --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ativa a responsividade em dispositivos móveis -->
 
-    <link rel="stylesheet" href="style.css">
-    <!--  conecta o arquivo de estilos css -->
+    <title>Escola Digital Livre</title> <!-- Titulo exibido na aba do navegador -->
 
-    <h1>Dsenvolvimento Web</h1>
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Conecta o arquivo de estilos (CSS) -->
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Tudo que o usuário vê e interage fica aqui -->
+
+    <header class="header">
+        <!-- Tag semântica: indica o cabeçalho da página -->
+
+        <div class="header-container">
+        <!-- Container que agrupa e centraliza o conteúdo do header -->
+
+            <a href="#" class="logo">
+                <!-- Logo clicável, leva para a home -->
+
+                <img src="./assets/logo.png" alt="Logo Educação Digital Livre">
+                <!-- img: adiciona imagem / src: caminho da imagem / alt: legenda da imagem -->
+
+                <span class="logo-text">
+                    <!-- span: elemento de texto inline, não quebra linha sozinho -->
+                    <span class="logo-title">Escola Digital Livre</span>
+                    <span class="logo-subtitle">Tecnologia para todos</span>
+                </span>
+            </a>
+
+            <nav class="main-nav">
+                <!-- Tag semântica para o menu de navegação -->
+
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <!-- a (link) para navegação | href é o caminho da página | "active" destaca a página atual -->
+
+                <a href="./cursos.html" class="nav-link">Cursos</a>
+                <a href="#" class="nav-link">Sobre</a>
+                <a href="#" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Agrupa os botões de busca e botão CTA -->
+
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar cursos...">
+                    <!-- input campo de entrada | placeholder some assim que o usuário digita -->
+
+                    <img src="./assets/icons8-pesquisar.svg" alt="Icone de pesquisa">
+                    <!-- Icone vetorial da lupa -->
+                </div>
+
+                <button class="btn-primary">Começar agora</button>
+                <!-- Botões para ações na página -->
+            </div>
+        </div>
+    </header>
 </body>
-<!-- tudo que o usuario ve e interage é aqui -->
- <header class="header">
-    <!--  tag semantica: indica o cabeçalho da pagina -->
-
-    <div class="header-container">  
-        <!-- container que agrupa e centraliza o conteudo do header -->
-
-        <a href="#" class="logo">
-            <!-- logo clicavel, leva para a home --> 
-             <img src="./assets/logo.png" alt=" " width="60px">
-        </a>
-
-    </div>
-
-
-     </header>
-
 </html>
