@@ -1,8 +1,8 @@
 /* variaveis globais cores e fontes */
 :root { 
     --color-primary: #37b156;
-    --color-primary-dark: #4339CA;
-    --color-text: #1E1B2E;
+    --color-primary-dark: #4339ca;
+    --color-text: #0f0d16;
     --color-text-light: #6B7280;
     --color-bg: #FFF; 
     --color-border: #E5E7EB;
@@ -71,3 +71,92 @@
         font-weight: 400;
         color: var(--color-text-light);
       }
+      /* navegação menu */
+      .main-nav {
+        display: flex;
+        align-items: center; /* centraliza os links verticalmente */
+        gap: 32px;
+
+      }
+
+       .nav-link {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-text-light);
+        transition: color 0.2s ease;
+      }
+
+       .nav-link:hover {
+        color: var(--color-primary);
+      }
+
+       .nav-link.active {
+        color: var(--color-primary-dark);
+        font-weight: 600;
+      }
+        .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .search-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-box input {
+        font-family: var(--font-main);
+        width: 220px;
+        padding: 10px 40px 10px 16px;
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      .search-box input:focus {
+        border-color: var(--color-primary);
+      }
+
+      .search-box input::placeholder {
+        color: var(--color-text-light);
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 14px;
+        color: var(--color-text-light);
+        pointer-events: none;
+        width: 25px;
+
+
+      }
+      .btn-primary {
+        font-family: var(--font-main);
+        background-color: var(--color-primary);
+        color: #FFF;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: background-color 0.2s ease;
+      }
+
+      
+
+      .btn-primary:hover {
+        background-color: var(--color-primary-dark);
+      }
+
